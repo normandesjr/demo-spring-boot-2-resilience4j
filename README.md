@@ -27,3 +27,9 @@ And to create something more interesting, what if we add TimeLimiter too?
 ```
 docker run --rm -v ~/dev/poc/resilience4j/demo-spring-boot-2-resilience4j/prometheus.yml:/etc/prometheus/prometheus.yml -p 9090:9090 --name prometheus  prom/prometheus
 ```
+
+#### Grafana
+
+```
+docker run --rm --name=grafana -p 3000:3000 grafana/grafana
+```
