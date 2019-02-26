@@ -8,7 +8,8 @@ public enum BeerType {
     IPA("ipa"),
     LAGER("lager"),
     PILSEN("pilsen"),
-    STOUT("stout");
+    STOUT("stout"),
+    FEIGN("feign");
 
     private String beanName;
 

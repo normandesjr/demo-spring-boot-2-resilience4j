@@ -27,8 +27,11 @@ public class BeerIpaRemote implements BeerRemote {
 
     @Override
     public List<Beer> findBeers() {
+
         Supplier<List<Beer>> chainedSupplier
                 = CircuitBreaker.decorateSupplier(circuitBreaker, () -> beerInfoRemote.findBeerByType("ipas"));
+
+
         return Try.ofSupplier(chainedSupplier)
                 .recover(e -> emptyList()).get();
     }

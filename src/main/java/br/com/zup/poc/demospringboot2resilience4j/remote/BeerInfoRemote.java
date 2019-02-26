@@ -1,6 +1,5 @@
 package br.com.zup.poc.demospringboot2resilience4j.remote;
 
-import br.com.zup.poc.demospringboot2resilience4j.helper.BeerType;
 import br.com.zup.poc.demospringboot2resilience4j.model.Beer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
